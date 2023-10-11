@@ -4,6 +4,93 @@
     padding: 0;
 }
 
+.m10v{
+    margin: 10px auto;
+}
+.m20v{
+    margin: 20px auto;
+}
+.m30v{
+    margin: 30px auto;
+}
+.m40v{
+    margin: 40px auto;
+}
+
 body{
     font-family: sans-serif;
+    height: 100vh;
+}
+
+main{
+    height: 85vh;
+    display: flex;
+}
+
+footer{
+    height: 15vh;
+    background-color: aqua;
+}
+
+nav{
+    width: 30%;
+    max-width: 300px;
+    background-color: green;
+    height: 100%;
+
+}
+
+.browser{
+    background-color: yellow;
+    width: 70%;
+    height: 100%;
+}
+
+.banner {
+    background-color: blue;
+    height: 6rem;
+}
+
+.categories {
+    height: 6vh;
+    background-color: brown;
+}
+
+.content {
+    height: calc(100% - 6rem);
+    overflow: auto;
+}
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    border: solid black 2px;
+}
+
+.card{
+    width: 50%;
+    text-align: center;
+    min-height: 20vh;
+}
+
+.round{
+    border-radius: 50%;
+
+}
+
+.content-row h2{
+    width: 100%;
+    margin: 30px 5%;
+
+}
+.card h4{
+    margin:1vh auto;
+}
+
+.card h5{
+    margin: 1vh auto;
+}
+.card img{
+    width:80%
 }
