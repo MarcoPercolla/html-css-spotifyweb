@@ -23,37 +23,132 @@ body{
 }
 
 main{
-    height: 85vh;
+    height: 90vh;
     display: flex;
 }
 
-footer{
-    height: 15vh;
-    background-color: aqua;
-}
 
 nav{
-    width: 30%;
-    max-width: 300px;
-    background-color: green;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
 
+.nav_elements{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.nav_elements a {
+    text-decoration: none;
+    color: grey;
+    padding-left: 1rem;
+    margin-bottom:0.8rem;
+
+}
+
+.nav_elements img{
+    width: 50%;
+    margin: 1rem;
+    
+}
+
+.playlist{
+    height: 50%;
+    color:grey;
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+      
+}
+
+.playlist i{
+    margin:1rem;
+    font-size: 2rem;
+    text-indent: -1rem;
+}
+.playlist h2{
+    color:white
+}
+
+.overflow{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.overflow h4{
+    margin:0.5rem 0;
+}
+
+.bottom_nav {
+    color:white;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end ; 
+}
+
+.bottom_nav h4{
+    margin: 0.5rem 1rem;
+}
+
+.bottom_nav h2{
+    color:grey;
+    margin: 1rem;
+}
+
+.bottom_nav hr{
+    color:grey;
+    margin:0 1rem;
 }
 
 .browser{
-    background-color: yellow;
-    width: 70%;
+    background-color: rgb(20, 25, 34);
+    width: 65%;
     height: 100%;
 }
 
 .banner {
-    background-color: blue;
-    height: 6rem;
+    background-color: rgb(14, 17, 23);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.banner a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border: solid 2px white;
+    padding: 0.3rem 0.8rem;
+    margin-right:0.3rem ;
+    border-radius: 30px ;
 }
 
 .categories {
-    height: 6vh;
-    background-color: brown;
+    min-height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.categories a{
+    width: 30%;
+    text-decoration: none;
+    color:gray;
+    padding: 0.5rem;
+    font-size: 12px;
+
 }
 
 .content {
@@ -64,8 +159,6 @@ nav{
 .content-row {
     display: flex;
     flex-wrap: wrap;
-    background-color: cadetblue;
-    border: solid black 2px;
 }
 
 .card{
@@ -81,16 +174,147 @@ nav{
 
 .content-row h2{
     width: 100%;
-    margin: 30px 5%;
+    margin: 1rem 2.5%;
+    color:white;
 
 }
 .card h4{
-    margin:1vh auto;
+    margin:0.2rem auto;
+    color:white;
+
 }
 
 .card h5{
-    margin: 1vh auto;
+    margin: 0.3rem auto;
+    color: grey;
 }
 .card img{
-    width:80%
+    width:90%
 }
+
+footer{
+    height: 10vh;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+       
+}
+
+footer i {
+    font-size: 0.9rem;
+}
+
+.feature{
+    width: 33%;
+    
+    
+}
+
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(121, 121, 121)
+}
+
+.left img {
+    height: 70%;
+    padding: 5px;
+}
+
+.fltext{
+    margin: 0.5vw;
+    
+}
+
+.fltext h4{
+    color: white;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white}
+
+.center_high{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.center_bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.timer{
+    width: 40%;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white
+}
+
+.right i {
+    margin: 0.5vw;
+}
+
+.timer{
+    width: 90%;
+}
+
+.volume{
+    width: 40%;
+}
+
+/* xs */
+@media screen and (max-width:576px){
+    nav{
+        width: 10%;
+    }
+    .browser{
+        width: 90%;
+    }
+}
+
+
+/* tablet */
+@media screen and (min-width:768px){
+
+    nav{
+        width: 25%;
+    }
+    .browser{
+        width: 75%;
+    }
+   
+    .card{
+        width: 25%;
+    }
+}
+
+/* desktop */
+@media screen and (min-width:992px) {
+
+    nav{
+        width: 20%;
+    }
+    .browser{
+        width: 80%;
+    }
+
+    .card {
+        width: calc(100%/6);
+    }  
+   
+}
+
