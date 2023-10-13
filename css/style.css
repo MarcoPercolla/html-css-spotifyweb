@@ -55,6 +55,12 @@ nav{
 
 }
 
+.nav_menu img{
+    width: 1em;
+    filter: invert(0.5);
+    
+}
+
 .nav_menu {
     height: calc(100% - 4rem);
     display: flex;
@@ -62,7 +68,7 @@ nav{
     
 }
 
-.nav_elements img{
+.nav_elements .logo{
     width: 50%;
     margin: 1rem;
     
@@ -84,13 +90,15 @@ nav{
     text-indent: -1rem;
 }
 .playlist h2{
-    color:white
+    color:white;
+    font-size: 1rem;
 }
 
 .playlist h3{
     display: flex;
     align-items: center;
     font-weight: 400;
+    font-size: 1rem;
 }
 
 .overflow{
@@ -101,6 +109,7 @@ nav{
 }
 
 .overflow h4{
+    font-size: 0.9rem;
     margin:0.5rem 0;
     font-weight: 400;
 }
@@ -114,22 +123,52 @@ nav{
     
 }
 
+.bottom_nav img{
+    width: 1em;
+    margin-left:1rem;
+}
+
 .bottom_nav h4{
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem;
     font-weight: 400;
     font-size: 14px;
-    color:grey
+    color:grey;
+    display: inline;
 }
 
 .bottom_nav h2{
     color:white;
     margin: 1rem;
     font-size: 16px;
+    display: inline;
+}
+
+.bottom_nav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.userpic img{
+    margin: 0;
+}
+.userpic{
+    height: 2em;
+    aspect-ratio:calc(1);
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    border-radius: 50%;
 }
 
 .bottom_nav hr{
     color:grey;
     margin:0 1rem;
+}
+
+.logo_xs{
+    width: 70%;
+    margin: 0.5rem auto
 }
 
 .xs{
@@ -173,7 +212,9 @@ nav{
     text-decoration: none;
     color:gray;
     padding: 0.5rem;
-    font-size: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin: 0.5rem auto;
 
 }
 
@@ -266,10 +307,21 @@ footer i {
     color: white}
 
 .center_high{
-    width: 100%;
+    height: 1.5rem;
+    width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
+
+}
+
+.center_high i{
+    font-size: 1.3rem;
+}
+
+.bigger_i i{
+    font-size: 1.5rem;
 }
 
 .center_bottom{
@@ -287,7 +339,7 @@ footer i {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: white
+    color: white;
 }
 
 .right i {
@@ -300,6 +352,7 @@ footer i {
 
 .volume{
     width: 40%;
+    margin-right: 0.5vw;
 }
 
 /* xs */
@@ -307,20 +360,55 @@ footer i {
     nav{
         width: 7%;
         justify-content: space-between;
+        
     }
     .browser{
         width: 93%;
     }
-    .wide{
-        display:none
+    
+
+    .nav_elements{
+
+        text-align: center;
     }
-    .xs{
-        display: flex;
-        color:white
+    
+    .nav_menu a{
+        padding:0.1rem;
+        
+
     }
 
-    .nav_elements .xs{
-        align-self: flex-end;
+    .xs{
+        display: inline-block;
+        color:white
+    }
+    
+    .bottom_nav a{
+        margin: 0rem;
+        margin-top: 0.5rem;
+    }
+    
+    .bottom_nav img {
+        margin: 0;
+        width: 80% ;
+    }
+
+    .userpic img{
+        width: 50%;
+    }
+
+    .userpic {
+        width: 85%;
+        height: auto;
+        margin: auto;
+    }
+
+    .bottom_nav .wide{
+        display: none;
+    }
+
+    .wide{
+        display:none
     }
 }
 
