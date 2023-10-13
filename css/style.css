@@ -17,6 +17,12 @@
     margin: 40px auto;
 }
 
+.border_left_green{
+    border-left: 3px solid #54ff50;
+}
+
+
+
 body{
     font-family: sans-serif;
     height: 100vh;
@@ -216,6 +222,12 @@ nav{
     font-weight: 700;
     margin: 0.5rem auto;
 
+}
+
+.categories hr{
+    color: #54ff50;
+    width: 2rem;
+    margin: 0 auto;
 }
 
 .content {
